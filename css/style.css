@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: #FDFDFD;
+  color: #181010;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#counter-container {
+  text-align: center;
+}
+
+#counter-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7A6360;
+  margin-bottom: 32px;
+}
+
+#counter-value {
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #181010;
+  line-height: 1;
+  margin-bottom: 40px;
+  transition: color 0.15s ease;
+}
+
+#counter-value.negative {
+  color: #7A6360;
+}
+
+#counter-controls {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.counter-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(24, 16, 16, 0.12);
+  background: transparent;
+  color: #3D2420;
+  font-size: 1.5rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-btn:hover {
+  background: rgba(255, 111, 89, 0.08);
+  border-color: rgba(255, 111, 89, 0.3);
+  color: #FF6F59;
+}
+
+.counter-btn:active {
+  transform: scale(0.94);
+}
+
+#btn-reset {
+  margin-top: 32px;
+  display: block;
+  background: none;
+  border: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.75rem;
+  color: #7A6360;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
+}
+
+#btn-reset:hover {
+  color: #FF6F59;
+}
